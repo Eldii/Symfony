@@ -1,0 +1,4 @@
+services:
+#    eldi_platform.example:
+#        class: Eldi\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

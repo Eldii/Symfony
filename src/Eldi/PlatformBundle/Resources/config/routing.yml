@@ -1,0 +1,38 @@
+eldi_platform_home:
+  path:    /{page}
+  defaults:
+    _controller: EldiPlatformBundle:Advert:index
+    page:    1
+  requirements:
+    page: \d*
+
+eldi_platform_view:
+  path:    /advert/{id}
+  defaults: { _controller: EldiPlatformBundle:Advert:view }
+  requirements:
+    id: \d+
+
+eldi_platform_view_slug:
+  path:    /{year}/{slug}.{_format}
+  defaults:
+    _controller: EldiPlatformBundle:Advert:viewSlug
+    _format:    html
+  requirements:
+    year: \d{4}
+    _format: html|xml
+
+eldi_platform_add:
+  path:    /add
+  defaults: { _controller: EldiPlatformBundle:Advert:add }
+
+eldi_platform_edit:
+  path:    /edit/{id}
+  defaults: { _controller: EldiPlatformBundle:Advert:edit }
+  requirements:
+    id: \d+
+
+eldi_platform_delete:
+  path:    /delete/{id}
+  defaults: { _controller: EldiPlatformBundle:Advert:delete }
+  requirements:
+    id: \d+

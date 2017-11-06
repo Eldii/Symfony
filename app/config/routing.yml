@@ -1,0 +1,3 @@
+eldi_platform:
+    resource: "@EldiPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform
