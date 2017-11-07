@@ -1,16 +1,19 @@
-{# src/Eldi/PlatformBundle/Resources/views/Advert/add.html.twig #}
+{# src/Eldi/PlatformBundle/Resources/views/Advert/edit.html.twig #}
 
 {% extends "EldiPlatformBundle::layout.html.twig" %}
 
-{% block body %}
+{% block title %}
+  Ajouter une annonce - {{ parent() }}
+{% endblock %}
+
+{% block eldiplatform_body %}
 
   <h2>Ajouter une annonce</h2>
 
   {{ include("EldiPlatformBundle:Advert:form.html.twig") }}
 
   <p>
-    Attention : cette annonce sera ajoutée directement
-    sur la page d'accueil après validation du formulaire.
+    Vous êtes entrain d'ajoutez une annonce.
   </p>
 
 {% endblock %}

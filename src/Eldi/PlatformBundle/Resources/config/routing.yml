@@ -12,14 +12,14 @@ eldi_platform_view:
   requirements:
     id: \d+
 
-eldi_platform_view_slug:
-  path:    /{year}/{slug}.{_format}
-  defaults:
-    _controller: EldiPlatformBundle:Advert:viewSlug
-    _format:    html
-  requirements:
-    year: \d{4}
-    _format: html|xml
+# eldi_platform_view_slug:
+#   path:    /{year}/{slug}.{_format}
+#   defaults:
+#     _controller: EldiPlatformBundle:Advert:viewSlug
+#     _format:    html
+#   requirements:
+#     year: \d{4}
+#     _format: html|xml
 
 eldi_platform_add:
   path:    /add
